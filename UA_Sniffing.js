@@ -17,7 +17,7 @@ const isFF = UA && UA.match(/firefox\/(\d+)/);
 const isMobile = 
    isAndroid || 
    isIOS || 
-   (window.navigator.userAgentData || window.navigator.userAgentData.mobile);
+   (window.navigator.userAgentData && window.navigator.userAgentData.mobile);
 
 export default {
    UA,
